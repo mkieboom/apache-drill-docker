@@ -1,8 +1,21 @@
 #!/bin/bash
-
-echo "###################################################################"
-echo "# Welcome to your Apche Drill v1.1.0 (Embedded mode) Docker image #"
-echo "###################################################################"
+echo ""
+echo ""
+echo "######################################################################"
+echo "# Welcome to your Apache Drill v1.1.0 (Embedded mode) Docker image   #"
+echo "#                                                                    #"
+echo "# Quick start query:                                                 #"
+echo "# SELECT * FROM cp.`employee.json` LIMIT 5;                          #"
+echo "#                                                                    #"
+echo "# More examples can be found at:                                     #"
+echo "# https://drill.apache.org/docs/querying-a-file-system-introduction/ #"
+echo "#                                                                    #"
+echo "# To exit:                                                           #"
+echo "# !quit                                                              #"
+echo "######################################################################"
+echo ""
+echo "Starting Apache Drill v1.1.0 in embeded mode..."
+echo ""
 
 #
 # Start Apache Drill in embedded mode
