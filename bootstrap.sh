@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "###################################################################"
+echo "# Welcome to your Apche Drill v1.1.0 (Embedded mode) Docker image #"
+echo "###################################################################"
+
 #
 # Start Apache Drill in embedded mode
 # https://drill.apache.org/docs/starting-drill-on-linux-and-mac-os-x/

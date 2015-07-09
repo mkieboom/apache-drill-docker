@@ -31,10 +31,11 @@ RUN tar -xvzf apache-drill-1.1.0.tar.gz -C /opt/drill
 # Start Apache Drill in embedded mode
 # https://drill.apache.org/docs/starting-drill-on-linux-and-mac-os-x/
 #
-ADD bootstrap.sh /etc/bootstrap.sh
-RUN chown root:root /etc/bootstrap.sh
-RUN chmod 700 /etc/bootstrap.sh
-ENV BOOTSTRAP /etc/bootstrap.sh
+RUN mkdir -p /drill-scripts
+ADD bootstrap.sh /drill-scripts/bootstrap.sh
+RUN chown root:root /drill-scripts/bootstrap.sh
+RUN chmod 700 /drill-scripts/bootstrap.sh
+ENV BOOTSTRAP /drill-scripts/bootstrap.sh
 
 #
 # Expose the Apache Drill Web UI 
